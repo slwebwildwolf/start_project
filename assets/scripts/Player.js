@@ -78,6 +78,15 @@ cc.Class(
                 this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
             }
             this.node.x += this.xSpeed * dt;
+            var mathWidth = this.node.parent.width/2;
+            if(this.node.x > mathWidth)
+            {
+                this.node.x = -mathWidth;
+            }
+            else if(this.node.x < -mathWidth)
+            {
+                this.node.x = mathWidth;
+            }
         }
     }
 );

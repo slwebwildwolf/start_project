@@ -35,6 +35,7 @@ cc.Class({
         var newStar = cc.instantiate(this.starPrefab);
         this.node.addChild(newStar);
         newStar.setPosition(this.getNewStarPosition());
+        newStar.getComponent('Start').game = this;
     },
     // use this for initialization
     onLoad: function onLoad() {

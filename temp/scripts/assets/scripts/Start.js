@@ -10,13 +10,23 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function onLoad() {}
-
+    onLoad: function onLoad() {},
+    getPlayerDistance: function getPlayerDistance() {
+        var playerPos = this.game.player.getPosition();
+        var dist = cc.pDistance(this.node.getPosition(), playerPos);
+        return dist;
+    },
+    onPicked: function onPicked() {
+        this.game.spawnNewStar();
+        this.node.destroy();
+    },
+    // called every frame, uncomment this function to activate update callback
+    update: function update(dt) {
+        if (this.getPlayerDistance() < this.Shoujifanwei) {
+            this.onPicked();
+            return;
+        }
+    }
 });
-// called every frame, uncomment this function to activate update callback
-// update: function (dt)
-// {
-
-// },
 
 cc._RFpop();

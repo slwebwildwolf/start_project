@@ -356,7 +356,7 @@
     "jumpHeight": 200,
     "jumpDuration": 0.3,
     "maxMoveSpeed": 400,
-    "accel": 350
+    "accel": 1000
   },
   {
     "__type__": "cc.Canvas",
