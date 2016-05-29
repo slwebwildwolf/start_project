@@ -19,6 +19,7 @@ cc.Class({
     onPicked: function onPicked() {
         this.game.spawnNewStar();
         this.node.destroy();
+        this.game.gainScore();
     },
     // called every frame, uncomment this function to activate update callback
     update: function update(dt) {

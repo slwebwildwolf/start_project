@@ -11,54 +11,54 @@
             "docks": [
               {
                 "active": 0,
-                "height": 324.5,
+                "height": 325,
                 "panels": [
                   "hierarchy.panel"
                 ],
                 "type": "panel",
-                "width": 312.265625
+                "width": 312
               },
               {
                 "active": 0,
-                "height": 324.5,
+                "height": 324,
                 "panels": [
                   "assets.panel"
                 ],
                 "type": "panel",
-                "width": 312.265625
+                "width": 312
               }
             ],
             "height": 652,
             "row": false,
             "type": "dock",
-            "width": 312.265625
+            "width": 312
           },
           {
             "docks": [
               {
                 "active": 0,
-                "height": 241,
+                "height": 449,
                 "panels": [
                   "scene.panel"
                 ],
                 "type": "panel",
-                "width": 619.3125
+                "width": 738
               },
               {
                 "active": 0,
-                "height": 408,
+                "height": 200,
                 "panels": [
                   "console.panel",
                   "timeline.panel"
                 ],
                 "type": "panel",
-                "width": 619.3125
+                "width": 738
               }
             ],
             "height": 652,
             "row": false,
             "type": "dock",
-            "width": 619.3125
+            "width": 738
           },
           {
             "active": 0,
@@ -67,19 +67,13 @@
               "inspector.panel"
             ],
             "type": "panel",
-            "width": 418.421875
+            "width": 300
           }
         ],
         "no-collapse": true,
         "row": true,
         "type": "dock"
       }
-    },
-    "worker": {
-      "x": 483,
-      "y": 214,
-      "width": 400,
-      "height": 300
     }
   }
 }

@@ -9,6 +9,11 @@ cc.Class(
                 default : null,
                 type : cc.Prefab,
             },
+            scoreDisplay:
+            {
+                default : null,
+                type : cc.Label,
+            },
             maxStarTime : 0,
             minStarTime : 0,
             
@@ -43,10 +48,16 @@ cc.Class(
         // use this for initialization
         onLoad: function () 
         {
+            this.score = 0;
+            
             this.groundY = this.ground.y + this.ground.height/2;
             this.spawnNewStar();
         },
-    
+        gainScore:function()
+        {
+            this.score += 1;
+            this.scoreDisplay.string = 'Score: '+this.score.toString();
+        }
         // called every frame, uncomment this function to activate update callback
         // update: function (dt) {
     
